@@ -19,7 +19,8 @@ evitando listas manuales y mejorando la seguridad y la experiencia de ingreso.
 -Se actualiza automáticamente cada vez que se reconoce un rostro.
 
 # Estructura de carpetas
-## Código
+```
+ Código
 /proyecto_gestion_invitados/
 │
 ├── invitados/ # Imágenes de invitados autorizados
@@ -31,6 +32,7 @@ evitando listas manuales y mejorando la seguridad y la experiencia de ingreso.
 │
 ├── registrar_ingreso.py # Script principal
 └── comparar_faces.py # Script auxiliar para pruebas
+```
 
 # Librerías necesarias
 Librería Uso principal
