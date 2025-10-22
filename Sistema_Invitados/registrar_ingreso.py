@@ -1,5 +1,4 @@
 
-"""
 import cv2
 import face_recognition as fr
 import os
@@ -7,7 +6,8 @@ import numpy
 from datetime import datetime
 
 # Crear base de datos
-ruta = 'Empleados'
+script_dir = os.path.dirname(os.path.abspath(__file__))
+ruta = os.path.join(script_dir, 'Invitados')
 mis_imagenes = []
 nombres_empleados = []
 lista_empleados = os.listdir(ruta)
@@ -103,4 +103,3 @@ else:
 
             # Mantener ventana abierta
             cv2.waitKey(0)
-"""

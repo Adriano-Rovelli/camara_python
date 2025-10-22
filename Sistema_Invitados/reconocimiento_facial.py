@@ -1,12 +1,19 @@
 
-"""
 
+import os
 import cv2
 import face_recognition as fr
 
+# Obtener la ruta del directorio donde está este script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construir rutas relativas a las imágenes
+foto_control_path = os.path.join(script_dir, 'img_pruebas', 'FotoA.jpg')
+foto_prueba_path = os.path.join(script_dir, 'img_pruebas', 'FotoB.jpg')
+
 # Cargar imagenes
-foto_control = fr.load_image_file('/Sistema_Invitados/img_pruebas/FotoA.jpg')
-foto_prueba = fr.load_image_file('/Sistema_Invitados/img_pruebas/FotoB.jpg')
+foto_control = fr.load_image_file(foto_control_path)
+foto_prueba = fr.load_image_file(foto_prueba_path)
 
 # Pasar las imagenes a rgb
 foto_control = cv2.cvtColor(foto_control, cv2.COLOR_BGR2RGB)
@@ -63,5 +70,5 @@ cv2.imshow('Foto Prueba', foto_prueba)
 # Mantener el programa abierto
 cv2.waitKey(0)
 
-"""
+
 
