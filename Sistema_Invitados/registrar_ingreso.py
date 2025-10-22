@@ -1,3 +1,5 @@
+
+"""
 import cv2
 import face_recognition as fr
 import os
@@ -101,3 +103,4 @@ else:
 
             # Mantener ventana abierta
             cv2.waitKey(0)
+"""

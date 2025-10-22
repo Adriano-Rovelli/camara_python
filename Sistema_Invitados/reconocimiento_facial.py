@@ -1,3 +1,6 @@
+
+"""
+
 import cv2
 import face_recognition as fr
 
@@ -60,5 +63,5 @@ cv2.imshow('Foto Prueba', foto_prueba)
 # Mantener el programa abierto
 cv2.waitKey(0)
 
-
+"""
 
